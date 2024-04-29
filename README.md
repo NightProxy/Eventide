@@ -1,5 +1,5 @@
-<div align="center">
 # Eventide
+<div align="center">
 <p style="color: #f7840a">A fast, simple, and highly remixable proxy.</p>
 </div>
 
