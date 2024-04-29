@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.imgur.com/4jaFpJz.png" alt="Eventide"/>
+# Eventide
 <p style="color: #f7840a">A fast, simple, and highly remixable proxy.</p>
 </div>
 
