@@ -113,6 +113,7 @@ searchbar.addEventListener('input', async (event) => {
     listItem.textContent = suggestion;
     listItem.addEventListener('click', () => {
       searchbar.value = suggestion;
+      form.dispatchEvent(new Event('submit')); // Dispatch form submission event
     });
     suggestionList.appendChild(listItem);
   });
