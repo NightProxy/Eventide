@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+  --theme-color: #0a41f7;
+  --shadow-color: #0a41f7;
+  --bgshadow-color: #0a41f7;
+  --base-color: rgba(25, 25, 25);
+}
+
+body {
+  top: 50%;
+  font-family: Poppins;
+  color: #4c4c4c;
+  background-color: var(--base-color);
+  background-image: url("/assets/imgs/bg/bgdark.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  will-change: transform;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2F2F2F;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 10px;
+  will-change: transform;
+}
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.searchbar {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  color: #202124;
+  display: flex;
+  z-index: 3;
+  height: 44px;
+  background: rgba(0, 0, 0);
+  backdrop-filter: blur(40px);
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  min-width: 200px;
+  width: auto;
+  max-width: 100px;
+  transition: 0.5s;
+  margin-top: 7px
+}
+
+.searchbar-wrapper {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 14px;
+}
+
+.searchbar-left {
+  font-size: 14px;
+  font-family: Poppins;
+  color: #202124;
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-icon-wrapper {
+  margin: auto;
+}
+
+.search-icon {
+  margin-top: 3px;
+  color: #9aa0a6;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+
+.searchbar-icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.searchbar-center {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.searchbar-input-spacer {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  height: 35px;
+  font-size: 16px;
+}
+
+.searchbar-input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, .87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -37px;
+  height: 34px;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.searchbar-input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: var(--theme-color);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -37px;
+  height: 34px;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+.searchbar-right {
+  display: flex;
+  flex: 0 0 auto;
+  margin-top: -5px;
+  align-items: stretch;
+  flex-direction: row
+}
+
+.searchbar-clear-icon {
+  margin-right: 12px
+}
+
+.group {
+  background-color: rgba(25, 25, 25);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  outline: 1px solid var(--theme-color);
+  transition: 0.5s;
+}
+
+.group:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 60px var(--shadow-color);
+}
+
+.card {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 130px;
+  margin: auto;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 15px 60px var(--shadow-color);
+  outline: 1px solid var(--theme-color);
+}
+
+
+.suggestion-list {
+  position: fixed;
+  z-index: 1111;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: var(--base-color);
+  color: var(--theme-color);
+  border-radius: 10px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestion-list div {
+  border-radius: 20px;
+  margin-left: 0.6vw;
+  margin-right: 0.6vw;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.suggestion-list div:hover {
+  box-shadow: 0 0 15px 1px var(--shadow-color), 0 0 1px 1px var(--theme-color);
+  transition: 0.3s;
+  background-color: #000;
+}
+
+#customCloakinput {
+  display: none;
+}

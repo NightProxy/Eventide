@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Light" />
+  <meta name="description" content="A fast, simple, and highly customizable proxy." />
+  <title id="title"></title>
+  <link rel="stylesheet" id="themecss" href="/assets/css/index.css" />
+  <script async src="https://arc.io/widget.min.js#zQjQEQcr"></script>
+  <!--UV-->
+  <script src="/@/bundle.js"></script>
+  <script src="/@/config.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-180MJ5GDVH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-180MJ5GDVH");
+</script>
+
+<body>
+    <h1 style="color:#fff; margin-top: 10%;font-size: 60px;">Eventide</h1>
+  <center>
+    <div class="card" style="position: fixed">
+        <h3 style="color: #fff;">Surf the Web</h3>
+        <div class="searchbar" style="
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            ">
+          <div class="searchbar-wrapper">
+            <div class="searchbar-left">
+              <div class="search-icon-wrapper">
+                <span class="search-icon searchbar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <form id="uv-form" class="searchbar-center">
+              <div class="searchbar-input-spacer"></div>
+              <input id="uv-address" type="text" class="searchbar-input" maxlength="2048" autocapitalize="off"
+                autocomplete="off" title="Search" role="combobox" placeholder="Search Anything" />
+            </form>
+          </div>
+        </div>
+      </div>
+    <div id="suggestion-list" class="suggestion-list"></div>
+
+  </center>
+</body>
+<!--Main Scripts-->
+<script src="/assets/js/index.js"></script>
+
+</html>
